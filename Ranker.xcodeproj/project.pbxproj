@@ -3,10 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0846EA8421AE93EFEED3CC52 /* Pods_Ranker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8690893672319720E355DE /* Pods_Ranker.framework */; };
+		A103931025426577006F5768 /* RankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A103930F25426577006F5768 /* RankModel.m */; };
+		A125A4F525601D7A0085F423 /* ExcelGenerater_FY.m in Sources */ = {isa = PBXBuildFile; fileRef = A125A4F425601D7A0085F423 /* ExcelGenerater_FY.m */; };
+		A125A4F92560D44A0085F423 /* FYCountryDayOneChina.m in Sources */ = {isa = PBXBuildFile; fileRef = A125A4F82560D44A0085F423 /* FYCountryDayOneChina.m */; };
+		A125A4FD2560D51D0085F423 /* FYApi_country_dayOne_china.m in Sources */ = {isa = PBXBuildFile; fileRef = A125A4FC2560D51D0085F423 /* FYApi_country_dayOne_china.m */; };
+		A133992F2554F0E900BF7D7A /* ExcelGenerater.m in Sources */ = {isa = PBXBuildFile; fileRef = A133992E2554F0E900BF7D7A /* ExcelGenerater.m */; };
+		A1368445255C0826002DEB3E /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1368444255C0826002DEB3E /* RankViewController.m */; };
+		A136844A255C0B10002DEB3E /* FYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1368449255C0B10002DEB3E /* FYViewController.m */; };
+		A136845E255C0E63002DEB3E /* FYApi_country.m in Sources */ = {isa = PBXBuildFile; fileRef = A136845D255C0E63002DEB3E /* FYApi_country.m */; };
+		A1368464255C0F1B002DEB3E /* FYDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1368463255C0F1B002DEB3E /* FYDataCenter.m */; };
+		A1368468255C0F8D002DEB3E /* FYCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1368467255C0F8D002DEB3E /* FYCountry.m */; };
+		A1378C6B255CCBD3009C97C6 /* FYCountryDayOneAll.m in Sources */ = {isa = PBXBuildFile; fileRef = A1378C6A255CCBD3009C97C6 /* FYCountryDayOneAll.m */; };
+		A1378C6F255CCC17009C97C6 /* FYApi_country_dayOne_all.m in Sources */ = {isa = PBXBuildFile; fileRef = A1378C6E255CCC17009C97C6 /* FYApi_country_dayOne_all.m */; };
+		A1378C78255CCCF8009C97C6 /* FYApi_country_dayOne_status.m in Sources */ = {isa = PBXBuildFile; fileRef = A1378C77255CCCF8009C97C6 /* FYApi_country_dayOne_status.m */; };
+		A181427525502606008352AD /* RKDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A181427425502606008352AD /* RKDateManager.m */; };
+		A1DFB3F425465E5C00B73047 /* RankDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1DFB3F325465E5C00B73047 /* RankDataCenter.m */; };
 		A1E374BB2540536200D0C0C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E374BA2540536200D0C0C6 /* AppDelegate.m */; };
 		A1E374BE2540536200D0C0C6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E374BD2540536200D0C0C6 /* SceneDelegate.m */; };
 		A1E374C12540536200D0C0C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E374C02540536200D0C0C6 /* ViewController.m */; };
@@ -14,9 +30,44 @@
 		A1E374C62540536300D0C0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E374C52540536300D0C0C6 /* Assets.xcassets */; };
 		A1E374C92540536300D0C0C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E374C72540536300D0C0C6 /* LaunchScreen.storyboard */; };
 		A1E374CC2540536300D0C0C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E374CB2540536300D0C0C6 /* main.m */; };
+		A1E374DC25405CCA00D0C0C6 /* RankApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E374DB25405CCA00D0C0C6 /* RankApi.m */; };
+		A1FA1EC02545A43000464B63 /* RankBigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FA1EBF2545A43000464B63 /* RankBigModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A6057DFE64E2172E6DC439D /* Pods-Ranker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ranker.debug.xcconfig"; path = "Target Support Files/Pods-Ranker/Pods-Ranker.debug.xcconfig"; sourceTree = "<group>"; };
+		2F00D9F8242C7A23A5C62839 /* Pods-Ranker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ranker.release.xcconfig"; path = "Target Support Files/Pods-Ranker/Pods-Ranker.release.xcconfig"; sourceTree = "<group>"; };
+		A103930E25426577006F5768 /* RankModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankModel.h; sourceTree = "<group>"; };
+		A103930F25426577006F5768 /* RankModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankModel.m; sourceTree = "<group>"; };
+		A125A4EE255F7E660085F423 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A125A4F325601D7A0085F423 /* ExcelGenerater_FY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExcelGenerater_FY.h; sourceTree = "<group>"; };
+		A125A4F425601D7A0085F423 /* ExcelGenerater_FY.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelGenerater_FY.m; sourceTree = "<group>"; };
+		A125A4F72560D44A0085F423 /* FYCountryDayOneChina.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYCountryDayOneChina.h; sourceTree = "<group>"; };
+		A125A4F82560D44A0085F423 /* FYCountryDayOneChina.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYCountryDayOneChina.m; sourceTree = "<group>"; };
+		A125A4FB2560D51D0085F423 /* FYApi_country_dayOne_china.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYApi_country_dayOne_china.h; sourceTree = "<group>"; };
+		A125A4FC2560D51D0085F423 /* FYApi_country_dayOne_china.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYApi_country_dayOne_china.m; sourceTree = "<group>"; };
+		A133992D2554F0E900BF7D7A /* ExcelGenerater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExcelGenerater.h; sourceTree = "<group>"; };
+		A133992E2554F0E900BF7D7A /* ExcelGenerater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelGenerater.m; sourceTree = "<group>"; };
+		A1368443255C0826002DEB3E /* RankViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		A1368444255C0826002DEB3E /* RankViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		A1368448255C0B10002DEB3E /* FYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYViewController.h; sourceTree = "<group>"; };
+		A1368449255C0B10002DEB3E /* FYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYViewController.m; sourceTree = "<group>"; };
+		A136845C255C0E63002DEB3E /* FYApi_country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYApi_country.h; sourceTree = "<group>"; };
+		A136845D255C0E63002DEB3E /* FYApi_country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYApi_country.m; sourceTree = "<group>"; };
+		A1368462255C0F1B002DEB3E /* FYDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYDataCenter.h; sourceTree = "<group>"; };
+		A1368463255C0F1B002DEB3E /* FYDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYDataCenter.m; sourceTree = "<group>"; };
+		A1368466255C0F8D002DEB3E /* FYCountry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYCountry.h; sourceTree = "<group>"; };
+		A1368467255C0F8D002DEB3E /* FYCountry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYCountry.m; sourceTree = "<group>"; };
+		A1378C69255CCBD3009C97C6 /* FYCountryDayOneAll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYCountryDayOneAll.h; sourceTree = "<group>"; };
+		A1378C6A255CCBD3009C97C6 /* FYCountryDayOneAll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYCountryDayOneAll.m; sourceTree = "<group>"; };
+		A1378C6D255CCC17009C97C6 /* FYApi_country_dayOne_all.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYApi_country_dayOne_all.h; sourceTree = "<group>"; };
+		A1378C6E255CCC17009C97C6 /* FYApi_country_dayOne_all.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYApi_country_dayOne_all.m; sourceTree = "<group>"; };
+		A1378C76255CCCF8009C97C6 /* FYApi_country_dayOne_status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FYApi_country_dayOne_status.h; sourceTree = "<group>"; };
+		A1378C77255CCCF8009C97C6 /* FYApi_country_dayOne_status.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FYApi_country_dayOne_status.m; sourceTree = "<group>"; };
+		A181427325502606008352AD /* RKDateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDateManager.h; sourceTree = "<group>"; };
+		A181427425502606008352AD /* RKDateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDateManager.m; sourceTree = "<group>"; };
+		A1DFB3F225465E5C00B73047 /* RankDataCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankDataCenter.h; sourceTree = "<group>"; };
+		A1DFB3F325465E5C00B73047 /* RankDataCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankDataCenter.m; sourceTree = "<group>"; };
 		A1E374B62540536200D0C0C6 /* Ranker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ranker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E374B92540536200D0C0C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1E374BA2540536200D0C0C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +80,11 @@
 		A1E374C82540536300D0C0C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E374CA2540536300D0C0C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1E374CB2540536300D0C0C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1E374DA25405CCA00D0C0C6 /* RankApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankApi.h; sourceTree = "<group>"; };
+		A1E374DB25405CCA00D0C0C6 /* RankApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankApi.m; sourceTree = "<group>"; };
+		A1FA1EBE2545A43000464B63 /* RankBigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankBigModel.h; sourceTree = "<group>"; };
+		A1FA1EBF2545A43000464B63 /* RankBigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankBigModel.m; sourceTree = "<group>"; };
+		FE8690893672319720E355DE /* Pods_Ranker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ranker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +92,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0846EA8421AE93EFEED3CC52 /* Pods_Ranker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114F65F82BCD1819123CAB5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A6057DFE64E2172E6DC439D /* Pods-Ranker.debug.xcconfig */,
+				2F00D9F8242C7A23A5C62839 /* Pods-Ranker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A125A4F1255F7EC60085F423 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				A1368448255C0B10002DEB3E /* FYViewController.h */,
+				A1368449255C0B10002DEB3E /* FYViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		A1368441255BEF20002DEB3E /* 榜单 */ = {
+			isa = PBXGroup;
+			children = (
+				A1DFB3F225465E5C00B73047 /* RankDataCenter.h */,
+				A1DFB3F325465E5C00B73047 /* RankDataCenter.m */,
+				A181427325502606008352AD /* RKDateManager.h */,
+				A181427425502606008352AD /* RKDateManager.m */,
+				A1E374DA25405CCA00D0C0C6 /* RankApi.h */,
+				A1E374DB25405CCA00D0C0C6 /* RankApi.m */,
+				A103930E25426577006F5768 /* RankModel.h */,
+				A103930F25426577006F5768 /* RankModel.m */,
+				A1FA1EBE2545A43000464B63 /* RankBigModel.h */,
+				A1FA1EBF2545A43000464B63 /* RankBigModel.m */,
+				A133992D2554F0E900BF7D7A /* ExcelGenerater.h */,
+				A133992E2554F0E900BF7D7A /* ExcelGenerater.m */,
+				A1368443255C0826002DEB3E /* RankViewController.h */,
+				A1368444255C0826002DEB3E /* RankViewController.m */,
+			);
+			path = "榜单";
+			sourceTree = "<group>";
+		};
+		A1368442255BEF3B002DEB3E /* 新冠 */ = {
+			isa = PBXGroup;
+			children = (
+				A125A4F1255F7EC60085F423 /* VC */,
+				A1378C7C255CCF8D009C97C6 /* Api */,
+				A1378C7B255CCF2C009C97C6 /* Model */,
+				A1368462255C0F1B002DEB3E /* FYDataCenter.h */,
+				A1368463255C0F1B002DEB3E /* FYDataCenter.m */,
+				A125A4F325601D7A0085F423 /* ExcelGenerater_FY.h */,
+				A125A4F425601D7A0085F423 /* ExcelGenerater_FY.m */,
+			);
+			path = "新冠";
+			sourceTree = "<group>";
+		};
+		A1378C7B255CCF2C009C97C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1368466255C0F8D002DEB3E /* FYCountry.h */,
+				A1368467255C0F8D002DEB3E /* FYCountry.m */,
+				A1378C69255CCBD3009C97C6 /* FYCountryDayOneAll.h */,
+				A1378C6A255CCBD3009C97C6 /* FYCountryDayOneAll.m */,
+				A125A4F72560D44A0085F423 /* FYCountryDayOneChina.h */,
+				A125A4F82560D44A0085F423 /* FYCountryDayOneChina.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1378C7C255CCF8D009C97C6 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				A1378C6D255CCC17009C97C6 /* FYApi_country_dayOne_all.h */,
+				A1378C6E255CCC17009C97C6 /* FYApi_country_dayOne_all.m */,
+				A125A4FB2560D51D0085F423 /* FYApi_country_dayOne_china.h */,
+				A125A4FC2560D51D0085F423 /* FYApi_country_dayOne_china.m */,
+				A1378C76255CCCF8009C97C6 /* FYApi_country_dayOne_status.h */,
+				A1378C77255CCCF8009C97C6 /* FYApi_country_dayOne_status.m */,
+				A136845C255C0E63002DEB3E /* FYApi_country.h */,
+				A136845D255C0E63002DEB3E /* FYApi_country.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		A1E374AD2540536200D0C0C6 = {
 			isa = PBXGroup;
 			children = (
 				A1E374B82540536200D0C0C6 /* Ranker */,
 				A1E374B72540536200D0C0C6 /* Products */,
+				114F65F82BCD1819123CAB5D /* Pods */,
+				EF4D5B0AC3B0F090B8FBAFFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +207,9 @@
 				A1E374BD2540536200D0C0C6 /* SceneDelegate.m */,
 				A1E374BF2540536200D0C0C6 /* ViewController.h */,
 				A1E374C02540536200D0C0C6 /* ViewController.m */,
+				A125A4EE255F7E660085F423 /* PrefixHeader.pch */,
+				A1368441255BEF20002DEB3E /* 榜单 */,
+				A1368442255BEF3B002DEB3E /* 新冠 */,
 				A1E374C22540536200D0C0C6 /* Main.storyboard */,
 				A1E374C52540536300D0C0C6 /* Assets.xcassets */,
 				A1E374C72540536300D0C0C6 /* LaunchScreen.storyboard */,
@@ -76,6 +219,14 @@
 			path = Ranker;
 			sourceTree = "<group>";
 		};
+		EF4D5B0AC3B0F090B8FBAFFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8690893672319720E355DE /* Pods_Ranker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1E374CF2540536300D0C0C6 /* Build configuration list for PBXNativeTarget "Ranker" */;
 			buildPhases = (
+				08E6B0622A8A0338982AD8DA /* [CP] Check Pods Manifest.lock */,
 				A1E374B22540536200D0C0C6 /* Sources */,
 				A1E374B32540536200D0C0C6 /* Frameworks */,
 				A1E374B42540536200D0C0C6 /* Resources */,
+				9023D828CB75141E9CCD7B1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,15 +293,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08E6B0622A8A0338982AD8DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ranker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9023D828CB75141E9CCD7B1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ranker/Pods-Ranker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ranker/Pods-Ranker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ranker/Pods-Ranker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1E374B22540536200D0C0C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A136845E255C0E63002DEB3E /* FYApi_country.m in Sources */,
+				A1368464255C0F1B002DEB3E /* FYDataCenter.m in Sources */,
 				A1E374C12540536200D0C0C6 /* ViewController.m in Sources */,
 				A1E374BB2540536200D0C0C6 /* AppDelegate.m in Sources */,
+				A1DFB3F425465E5C00B73047 /* RankDataCenter.m in Sources */,
+				A125A4FD2560D51D0085F423 /* FYApi_country_dayOne_china.m in Sources */,
+				A1FA1EC02545A43000464B63 /* RankBigModel.m in Sources */,
+				A125A4F525601D7A0085F423 /* ExcelGenerater_FY.m in Sources */,
 				A1E374CC2540536300D0C0C6 /* main.m in Sources */,
+				A133992F2554F0E900BF7D7A /* ExcelGenerater.m in Sources */,
+				A181427525502606008352AD /* RKDateManager.m in Sources */,
+				A1378C6B255CCBD3009C97C6 /* FYCountryDayOneAll.m in Sources */,
+				A1368468255C0F8D002DEB3E /* FYCountry.m in Sources */,
+				A1368445255C0826002DEB3E /* RankViewController.m in Sources */,
+				A103931025426577006F5768 /* RankModel.m in Sources */,
 				A1E374BE2540536200D0C0C6 /* SceneDelegate.m in Sources */,
+				A1E374DC25405CCA00D0C0C6 /* RankApi.m in Sources */,
+				A136844A255C0B10002DEB3E /* FYViewController.m in Sources */,
+				A1378C78255CCCF8009C97C6 /* FYApi_country_dayOne_status.m in Sources */,
+				A1378C6F255CCC17009C97C6 /* FYApi_country_dayOne_all.m in Sources */,
+				A125A4F92560D44A0085F423 /* FYCountryDayOneChina.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,34 +500,46 @@
 		};
 		A1E374D02540536300D0C0C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6057DFE64E2172E6DC439D /* Pods-Ranker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BZM86V26D4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = Ranker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = riceFun.Ranker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kujiale.homeshow.Homeshow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.kujiale.homeshow.Homeshow";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A1E374D12540536300D0C0C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F00D9F8242C7A23A5C62839 /* Pods-Ranker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BZM86V26D4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = Ranker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = riceFun.Ranker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kujiale.homeshow.Homeshow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.kujiale.homeshow.Homeshow";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
