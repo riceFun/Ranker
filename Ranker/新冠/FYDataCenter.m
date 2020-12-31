@@ -52,8 +52,9 @@
     NSArray *countrys = [FYDataCenter queryCountrysFromLocal];
     if (countrys) {
         self.countries = countrys;
+        //1.先请求这个  完成后
 //        [self _pQueryAllDataWithCountries:self.countries isFirst:YES];
-        
+//        2. 重启应用 请求这个
         [self _queryChinaDayOne];
     } else {
         K_Weakself
@@ -292,8 +293,6 @@
         }
         NSArray *responseObjectArray = (NSArray *)request.responseObject;
         NSArray *CountryDayOneAll = [NSArray yy_modelArrayWithClass:[FYCountryDayOneAll class] json:responseObjectArray];
-        
-        
         
         NSLog(@"第%d请求成功",currentIndex);
         //            NSLog(@"国家 请求成功");

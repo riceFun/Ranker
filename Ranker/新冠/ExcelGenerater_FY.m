@@ -18,6 +18,7 @@
 
 //记录已经被记录在excel上的账号，如果有的话，直接记录其值，不再记录账号名字和头像地址
 @property (nonatomic,copy) NSMutableDictionary *mDic_accout;
+@property (nonatomic,assign) ExcelGenerater_FYType fyType;//生成表格数据类型 default= ExcelGenerater_FYType_Confirmed
 
 @end
 
@@ -28,6 +29,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[ExcelGenerater_FY alloc]init];
+        instance.fyType = ExcelGenerater_FYType_Death;
     });
     return instance;
 }
@@ -110,9 +112,6 @@
         mDicY[dayOneModel.Date_short] = [NSNumber numberWithInt:pY+2];
     }
     
-    
-    
-    
     //3.3 插入具体数据 x 代表行  y 代表列
     //用于保存国家 所对应的列 以dayOneModel.Country 为 key
     NSMutableDictionary *mDicX = [NSMutableDictionary dictionary];
@@ -129,7 +128,13 @@
                 if (mDicY[dayOneModel.Date_short]) {//一般情况来说 都是会有的 因为在上面 maxArray就已经找到所有的日期了
                     int pY = [mDicY[dayOneModel.Date_short] intValue];
                     //填值
-                    worksheet_write_string(worksheet, pX, pY,(char*) [dayOneModel.Deaths UTF8String], NULL);
+                    if (self.fyType == ExcelGenerater_FYType_Confirmed) {
+                        worksheet_write_string(worksheet, pX, pY,(char*) [dayOneModel.Confirmed UTF8String], NULL);
+                    } else if (self.fyType == ExcelGenerater_FYType_Death) {
+                        worksheet_write_string(worksheet, pX, pY,(char*) [dayOneModel.Deaths UTF8String], NULL);
+                    } else {
+                        worksheet_write_string(worksheet, pX, pY,(char*) [dayOneModel.Confirmed UTF8String], NULL);
+                    }
                 }
             } else {//没有这个国家
                 //那就先存了这个国家所对应的行 x
@@ -139,34 +144,31 @@
                 //国旗
                 worksheet_write_string(worksheet, x+1, 1,(char*) [dayOneModel.Flag UTF8String], NULL);
                 
-                
                 //确诊值
                 //如果这个确诊值所对应的日期有 Y，那就取出对应的 Y
                 if (mDicY[dayOneModel.Date_short]) {//一般情况来说 都是会有的 因为在上面 maxArray就已经找到所有的日期了
                     int pY = [mDicY[dayOneModel.Date_short] intValue];
                     //填值
-                    worksheet_write_string(worksheet, x+1, pY,(char*) [dayOneModel.Deaths UTF8String], NULL);
+                    if (self.fyType == ExcelGenerater_FYType_Confirmed) {
+                        worksheet_write_string(worksheet, x+1, pY,(char*) [dayOneModel.Confirmed UTF8String], NULL);
+                    } else if (self.fyType == ExcelGenerater_FYType_Death) {
+                        worksheet_write_string(worksheet, x+1, pY,(char*) [dayOneModel.Deaths UTF8String], NULL);
+                    } else {
+                        worksheet_write_string(worksheet, x+1, pY,(char*) [dayOneModel.Confirmed UTF8String], NULL);
+                    }
                 }
             }
         }
     }
-    
-    
-    
+        
     //4.保存生成的文件
     workbook_close(workbook);
     NSLog(@"file path: %@",self.filePath);
     return;
     
-    
-    
-    
-    
-    
-    
-    //3.2.1 先遍历最外层的 bigmodel，插入日期
-    int x = 0;
-    for (int y = 0; y < dataArray.count; y++) {
+//    //3.2.1 先遍历最外层的 bigmodel，插入日期
+//    int x = 0;
+//    for (int y = 0; y < dataArray.count; y++) {
 //        RankBigModel *bigModel = dataArray[y];
 //        //插入日期，在第一行，列数的数每次加2，因为前面有两个(账号姓名、头像)
 //        worksheet_write_number(worksheet, 0, y+2,[bigModel.updated doubleValue], NULL);
@@ -196,11 +198,11 @@
 //                worksheet_write_number(worksheet, pX, y+2,[model.fans doubleValue], NULL);
 //            }
 //        }
-    }
+//    }
     
-    //4.保存生成的文件
-    workbook_close(workbook);
-    NSLog(@"file path: %@",self.filePath);
+//    //4.保存生成的文件
+//    workbook_close(workbook);
+//    NSLog(@"file path: %@",self.filePath);
 }
 
 
@@ -216,7 +218,14 @@
 
 - (NSString *)fileName {
     if (!_fileName) {
-        _fileName = [self.filePath stringByAppendingPathComponent:@"FY_Confirm.xlsx"];
+        //填值
+        if (self.fyType == ExcelGenerater_FYType_Confirmed) {
+            _fileName = [self.filePath stringByAppendingPathComponent:@"FY_Confirm.xlsx"];
+        } else if (self.fyType == ExcelGenerater_FYType_Death) {
+            _fileName = [self.filePath stringByAppendingPathComponent:@"FY_Death.xlsx"];
+        } else {
+            _fileName = [self.filePath stringByAppendingPathComponent:@"FY_Confirm.xlsx"];
+        }
     }
     return _fileName;
 }
