@@ -6,6 +6,7 @@
 //
 
 #import "FYViewController.h"
+#import "FYDataCenter.h"
 
 @interface FYViewController ()
 
@@ -16,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"新冠";
+    
+    //    [FYCountryCode handle];
+        
+  [[FYDataCenter sharedInstance] queryCountries];
+
+    //    [[FYDataCenter sharedInstance] queryCountriesDayOne];
 }
 
 

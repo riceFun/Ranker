@@ -29,7 +29,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[ExcelGenerater_FY alloc]init];
-        instance.fyType = ExcelGenerater_FYType_Death;
+        instance.fyType = ExcelGenerater_FYType_Confirmed;
     });
     return instance;
 }

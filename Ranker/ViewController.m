@@ -41,15 +41,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.view addSubview:self.tableView];
-//    [self _configData];
-    
-//    [FYCountryCode handle];
-    
-    [[FYDataCenter sharedInstance] queryCountries];
-
-//    [[FYDataCenter sharedInstance] queryCountriesDayOne];
-    
+    [self _configData];
+    [self.view addSubview:self.tableView];
 }
 
 - (void)_configData {

@@ -40,7 +40,9 @@
     self.title = @"榜单";
     
     [self.view addSubview:self.tableView];
+    //1. 先打开这个  下载数据
 //    [self _queryNetData];
+    //2.关闭上面的再打开这个
     [self _generatorExcel];
 }
 
@@ -60,11 +62,11 @@
     //        [self.tableView reloadData];
     //    } else {
     [self _queryNetData];
-    //    }
+//        }
 }
 
 - (void)_queryNetData {
-    [[RankDataCenter sharedInstance] queryRankDataWithTimeType:Api_period_month platform:Api_platform_douyin category:Api_category_不限 successBlock:^(NSArray * _Nonnull dataArra, NSDictionary * _Nonnull context) {
+    [[RankDataCenter sharedInstance] queryRankDataWithTimeType:Api_period_month platform:Api_platform_kuaishou category:Api_category_不限 successBlock:^(NSArray * _Nonnull dataArra, NSDictionary * _Nonnull context) {
         self.totalRank = dataArra;
         [self sort];
         [self.tableView reloadData];
