@@ -18,11 +18,11 @@
     [super viewDidLoad];
     self.title = @"新冠";
     
-    //    [FYCountryCode handle];
+//        [FYCountryCode handle];
         
   [[FYDataCenter sharedInstance] queryCountries];
 
-    //    [[FYDataCenter sharedInstance] queryCountriesDayOne];
+//        [[FYDataCenter sharedInstance] queryCountriesDayOne];
 }
 
 

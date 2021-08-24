@@ -86,11 +86,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.row == 0) {
-        [self.navigationController pushViewController:[RankViewController new] animated:YES];
-    } else {
+//    if (indexPath.row == 0) {
+//        [self.navigationController pushViewController:[RankViewController new] animated:YES];
+//    } else {
+//        NSLog(@"sdsdsd");
         [self.navigationController pushViewController:[FYViewController new] animated:YES];
-    }
+//    }
     
     
 }

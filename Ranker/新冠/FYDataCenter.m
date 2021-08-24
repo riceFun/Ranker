@@ -78,7 +78,7 @@
             //存到本地
             [FYDataCenter saveCountrysToLocalWithArray:[countrys copy]];
             
-            [self _queryChinaDayOne];
+//            [self _queryChinaDayOne];
             NSLog(@"国家 请求成功");
         } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
             NSLog(@"国家 请求失败");

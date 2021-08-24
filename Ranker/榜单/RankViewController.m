@@ -66,7 +66,7 @@
 }
 
 - (void)_queryNetData {
-    [[RankDataCenter sharedInstance] queryRankDataWithTimeType:Api_period_month platform:Api_platform_kuaishou category:Api_category_不限 successBlock:^(NSArray * _Nonnull dataArra, NSDictionary * _Nonnull context) {
+    [[RankDataCenter sharedInstance] queryRankDataWithTimeType:Api_period_month platform:Api_platform_xigua category:Api_category_不限 successBlock:^(NSArray * _Nonnull dataArra, NSDictionary * _Nonnull context) {
         self.totalRank = dataArra;
         [self sort];
         [self.tableView reloadData];
